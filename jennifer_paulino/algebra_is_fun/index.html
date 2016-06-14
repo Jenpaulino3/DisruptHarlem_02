@@ -1,25 +1,92 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
-	<title>Algebra is Fun</title>
+  <title>Home-Algebra Is Fun</title>
 </head>
-<style>
-	body {
-		background-color: white;
-}
-	h1	{
-		color: black;
-		font-family: helvetica;
-		font-size: 72px;
-}
-	p 	{ 
-		color: white;
-		font-family: helvetica;
-		font-size: 20px;
-		text-align: center; 
-		margin: 0px 200px 50px 200
-}
+	  <style>
+		body {
+		    background-image: url("./images/homepage.jpg");
+    	    background-repeat: no-repeat;
+    	    background-attachment: absolute;
+    	    background-position: center; 
+    		text-align: center;    	}
+    	.logo {
+			text-align: center;
+		}
+	    .info {
+		    position: absolute;
+		    top: 40%;
+		    width: 100%;
+		    text-align: center;
+		    font-size: 18px;
+		}
+		p {
+  			font-size: 20px;
+  			text-align: center;
+  			width: 30%;
+  			margin: 0px 200px 50px 200px;
+  		}
+  		ul#menu {
+    		float:center;
+    		margin-top: 250px;
+		}
+		ul#menu li {
+		    display: inline;
+		    padding: 100px 0px 100px 0px;
+		    margin: 100px 50px 100px 50px;
+		}
+		ul#menu li a {
+		    background-color: #FF4317;
+		    color: white;
+		    padding: 20px 30px;
+		    text-decoration: none;
+		    border-radius: 100px;
+		    font-size: 20px;
+		}
+		ul#menu li a:hover {
+		    background-color: #E87409;
+		}
+		ul#footer {
+	      	font-size: 20px;
+	      	position: fixed;
+	      	bottom: 0;
+	      	margin-right: 0 auto;
+	      	text-align: center;
+	      	width: 95%;
+    	}
+    	ul#footer li {
+    		text-align: center;
+	      	display: inline-block;
+	      	padding: 0px 10px 0px 10px;
+	      	color: red;
+	      	text-decoration: none;
+  		}
+  		ul#footer li a {
+		    color: #821D05;
+		    padding: 20px 30px;
+		    border-radius: 100px;
+		    font-size: 20px;
+		    font-weight: bold;
+		}
 </style>
-<body>
-	<img src="images/equations.jpg" width="300" height="300">"
+	<body>
+    	<div class=logo>
+    		<img src="./images/logo.png">
+	</div>
+		<div class=info><center>
+			<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.<center></b></p>
+	</div>
+		<ul id="menu">
+	  		<li><a href="#">Equations</a></li>
+	  		<li><a href="#">Word Problems</a></li>
+	  		<li><a href="#">Real Life Math Problems</a></li>
+	</ul>  
+	</div>
+		<ul id="footer">
+	    	<li><a href="#">Privacy</a></li>
+	        <li><a href="#">About Us</a></li>
+	        <li><a href="#">Contact Us</a></li>
+	</ul>
+</body>
 </html>
