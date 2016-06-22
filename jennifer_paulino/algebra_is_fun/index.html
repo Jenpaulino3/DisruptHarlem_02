@@ -1,92 +1,101 @@
-	<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Home-Algebra Is Fun</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home - Algebra Is Fun</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-	  <style>
-		body {
-		    background-image: url("./images/homepage.jpg");
-    	    background-repeat: no-repeat;
-    	    background-attachment: absolute;
-    	    background-position: center; 
-    		text-align: center;    	}
-    	.logo {
-			text-align: center;
-		}
-	    .info {
-		    position: absolute;
-		    top: 40%;
-		    width: 100%;
-		    text-align: center;
-		    font-size: 18px;
-		}
-		p {
-  			font-size: 20px;
-  			text-align: center;
-  			width: 30%;
-  			margin: 0px 200px 50px 200px;
-  		}
-  		ul#menu {
-    		float:center;
-    		margin-top: 250px;
-		}
-		ul#menu li {
-		    display: inline;
-		    padding: 100px 0px 100px 0px;
-		    margin: 100px 50px 100px 50px;
-		}
-		ul#menu li a {
-		    background-color: #FF4317;
-		    color: white;
-		    padding: 20px 30px;
-		    text-decoration: none;
-		    border-radius: 100px;
-		    font-size: 20px;
-		}
-		ul#menu li a:hover {
-		    background-color: #E87409;
-		}
-		ul#footer {
-	      	font-size: 20px;
-	      	position: fixed;
-	      	bottom: 0;
-	      	margin-right: 0 auto;
-	      	text-align: center;
-	      	width: 95%;
-    	}
-    	ul#footer li {
-    		text-align: center;
-	      	display: inline-block;
-	      	padding: 0px 10px 0px 10px;
-	      	color: red;
-	      	text-decoration: none;
-  		}
-  		ul#footer li a {
-		    color: #821D05;
-		    padding: 20px 30px;
-		    border-radius: 100px;
-		    font-size: 20px;
-		    font-weight: bold;
-		}
-</style>
-	<body>
-    	<div class=logo>
-    		<img src="./images/logo.png">
-	</div>
-		<div class=info><center>
-			<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.<center></b></p>
-	</div>
-		<ul id="menu">
-	  		<li><a href="#">Equations</a></li>
-	  		<li><a href="#">Word Problems</a></li>
-	  		<li><a href="#">Real Life Math Problems</a></li>
-	</ul>  
-	</div>
-		<ul id="footer">
-	    	<li><a href="#">Privacy</a></li>
-	        <li><a href="#">About Us</a></li>
-	        <li><a href="#">Contact Us</a></li>
-	</ul>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Algebra Is Fun</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sfeedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Algebra Is Fun</h1>
+                        <div class="transbox">
+                            <h3><p>We make Algebra fun and easy!</br></br>Click on the following categories to see algebraic problems and solutions</p></h3>
+                        </div>
+                        <!-- Links to the pages --> 
+                        <div id="pages">
+                            <ul>
+                                <li><a href="equations.html">Equations</a></li>
+                                <li><a href="#">Word Problems</a></li>
+                                <li><a href="#">Real Math</a></li>
+                            </ul>
+                        </div>        
+                            <div class="footer">    
+                                <a href="privacy.html">Privacy</a>
+                                <p class="copyright text-muted small">Copyright &copy; Algebra Is Fun 2016. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
