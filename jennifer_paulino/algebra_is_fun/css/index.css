@@ -169,32 +169,6 @@ div.transbox p {
   color: #821D05;
 }
 
-
-
-table#footerlinks {
-  }
-
-@media (min-width: 768px) {
-  .intro-header {
-  min-height: 100%;
-  text-align: center;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 5%
-}
-
-.intro-message > h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-  font-size: 6em;
-}
-
-.intro-message > h3 {
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
 table#pages {
   text-align: center;
 }
@@ -213,6 +187,7 @@ table#pages td a {
   border-radius: 100px;
   font-size: 20px;
 }
+
 .footer a {
   color: #821D05;
   font-size: 18px;

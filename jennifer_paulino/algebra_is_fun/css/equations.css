@@ -1,25 +1,17 @@
 /*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body,
-html {
-    width: 100%;
-    height: 100%;
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: url(../img/equations.png);
+    background-repeat: repeat;
+    background-size: 25%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
+/* NAVBAR */
 
 .navbar-default {
   background-color: white;
@@ -34,12 +26,13 @@ h6 {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: orange;
+  color: #ECBB44;
 }
 
 .navbar-default .nav > li > a,
@@ -48,11 +41,12 @@ h6 {
   font-weight: 700;
   font-size: 14px;
   color: #821D05;
+  font-weight: bold;
 }
 
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: orange;
+  color: #ECBB44;
 }
 
 .navbar-default .nav > li.active > a,
@@ -66,145 +60,54 @@ h6 {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
-.navbar-default {
-  background-color: white;
+/*TOP CONTENT*/
+
+.hero-spacer {
+	text-align: center;
+    margin-top: 50px;
+    background-color: #EDDDA1;
+    margin: 0;
+    padding: 10px;
 }
 
-.navbar-default .navbar-header .navbar-brand {
-  color: #821D05;
+.hero-spacer h1 {
+	color: #821D05;
+	font-weight: bold;
+	font-size: 72px;
 }
 
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: orange;
+/*THUMBNAILS*/
+
+.hero-feature {
+    margin-bottom: 30px;
 }
 
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
-  color: #821D05;
+.hero-feature h3 {
+	color: #821D05;
+	font-weight: bold;
+	font-size: 28px;
+	text-decoration: underline;
 }
 
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: orange;
+.hero-feature h3:hover {
+    color: #ECBB44;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: #821D05 !important;
-  background-color: transparent;
-}
+/*FOOTER*/
 
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
-  background-color: transparent;
-}
-}
-.intro-header {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  background: url(../img/equations.png) repeat-x, url(../img/equations.png) repeat-x; 
-  background-size: 10%, 10%;
-  background-position: 0px 50px, center bottom;
-  text-align: center;
-  background-color: #EDDDA1;
-}
+.footer {
+	text-align: center;
+ }
 
-.intro-message {
-  position: relative;
-  margin-top: 85px;
-}
-  
-.intro-message > h1 {
-  font-size: 5em;
-  font-weight: 700;
-  color: #821D05;
-}
-
-.intro-message > h3 {
-  font-size: 16px;
-  margin: 30px 400px 0px 400px;
-}
-
-.thumbs {
-  display: inline;
-}
-
-#pages {
-  text-align: center;
-}
-
-#pages ul {
-  list-style: none;
-  padding: 50px 0px 100px 0px;
-}
-
-#pages li {
-  display: inline;
-  background-color: #ECBB44;
-  padding: 20px 50px;
-  margin: 10px;
-  border-radius: 100px;
-}
-
-#pages li a {
-  color: #821D05;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-#pages li a:hover {
-  color: #EDDDA1;
-}
-
-
-
-table#footerlinks {
-  }
-
-@media (min-width: 768px) {
-  .intro-header {
-  min-height: 100%;
-  text-align: center;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 5%
-}
-
-.intro-message > h1 {
-  margin: 0;
-}
-
-.intro-message > h3 {
-  color:black;
-}
-
-table#pages {
-  text-align: center;
-}
-
-table#pages td {
-  display: inline-block;
-  padding: 100px 0px 100px 0px;
-  margin: 10px 50px 90px 10px;
-}
-
-table#pages td a {
-  background-color: #FF4317;
-  color: white;
-  padding: 20px 30px;
-  text-decoration: none;
-  border-radius: 100px;
-  font-size: 20px;
-}
 .footer a {
-  color: #821D05;
-  font-size: 18px;
-  text-decoration: underline;
+	text-align: center;
+	color: #821D05;
+	font-size: 18px;
+	text-decoration: underline;
 }
 
 p.copyright {
-  color: #821D05;
+	color: #821D05;
 }
