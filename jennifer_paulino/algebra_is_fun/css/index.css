@@ -21,6 +21,13 @@ h6 {
   font-weight: 700;
 }
 
+body {
+    padding-top: 20px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: url(../img/bg.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 .navbar-default {
   background-color: white;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -66,48 +73,8 @@ h6 {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
-.navbar-default {
-  background-color: white;
-}
-
-.navbar-default .navbar-header .navbar-brand {
-  color: #821D05;
-}
-
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: orange;
-}
-
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
-  color: #821D05;
-}
-
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
-  color: orange;
-}
-
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
-  color: #821D05 !important;
-  background-color: transparent;
-}
-
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
-  background-color: transparent;
-}
-}
-
 .intro-header {
   padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  color: #f8f8f8;
-  background: url(../img/bg.jpg) no-repeat center center;
-  background-size: cover;
-  background-position: center;
   text-align: center;
 }
 
@@ -118,8 +85,9 @@ h6 {
 
 .intro-message > h1 {
   margin: 0;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-  font-size: 6em;
+  color: white;
+  font-size: 72px;
+  text-decoration: bold;
 }
 
 div.transbox {
@@ -142,51 +110,29 @@ div.transbox p {
   margin: 30px 400px 0px 400px;
 }
 
-#pages {
+/*LINKS*/
+
+.button {
+  background-color: #FD6900;
+  border: none;
+  padding: 0px 50px 15px 50px;
   text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 20px; /* HORIZONTAL SPACING BETWEEN LINKS*/
+  border-radius: 50%;
 }
 
-#pages ul {
-  list-style: none;
-  padding: 80px 0px 100px 0px;
-}
-
-#pages li {
-  display: inline;
-  background-color: #FF4317;
-  padding: 20px 50px;
-  margin: 10px;
-  border-radius: 100px;
-}
-
-#pages li a {
+.button h3 {
   color: white;
-  font-size: 20px;
   text-decoration: underline;
 }
 
-#pages li a:hover {
-  color: #821D05;
+.button h3:hover {
+  color:#441501
 }
 
-table#pages {
-  text-align: center;
-}
-
-table#pages td {
-  display: inline-block;
-  padding: 100px 0px 100px 0px;
-  margin: 10px 50px 90px 10px;
-}
-
-table#pages td a {
-  background-color: #FF4317;
-  color: white;
-  padding: 20px 30px;
-  text-decoration: none;
-  border-radius: 100px;
-  font-size: 20px;
-}
+/*FOOTER*/
 
 .footer a {
   color: #821D05;

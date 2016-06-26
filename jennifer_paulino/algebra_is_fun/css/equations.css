@@ -26,13 +26,12 @@ body {
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 28px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #ECBB44;
+  color: orange;
 }
 
 .navbar-default .nav > li > a,
@@ -41,12 +40,11 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: #821D05;
-  font-weight: bold;
 }
 
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #ECBB44;
+  color: orange;
 }
 
 .navbar-default .nav > li.active > a,
@@ -64,10 +62,10 @@ body {
 
 .hero-spacer {
 	text-align: center;
-    margin-top: 50px;
-    background-color: #EDDDA1;
-    margin: 0;
-    padding: 10px;
+  margin-top: 50px;
+  background-color: #EDDDA1;
+  margin: 0;
+  padding: 10px;
 }
 
 .hero-spacer h1 {
