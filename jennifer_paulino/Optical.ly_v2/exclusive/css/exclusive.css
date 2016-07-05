@@ -1,0 +1,46 @@
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/*NAVIGATION BAR*/
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #07A96D;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #000000;
+}
+.navbar-default .navbar-brand {
+    color: #07A96D;
+    font-size: 24px;
+}
+.navbar-default .navbar-brand:hover {
+    color: #000000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #ddd;
+}
+.jumbotron {
+	background-color: #07A96D;
+	color: #FFFFFF;
+}
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
