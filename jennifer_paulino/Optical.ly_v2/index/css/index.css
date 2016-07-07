@@ -50,7 +50,7 @@ aside {
 .schedule {
     position: fixed;
     top: 0;
-    left: 40%;
+    left: 20%;
 }
 
 .logo {
@@ -171,7 +171,7 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;\
   size: 96px;
 }

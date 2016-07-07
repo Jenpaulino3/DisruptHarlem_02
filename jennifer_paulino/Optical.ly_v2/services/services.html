@@ -59,7 +59,7 @@
                 <a href="../login/login.html" onclick=$ ( "#menu-close").click();>Login/Signup</a>
             </li>
             <li>
-                <a href="../dashboard/index.html" onclick=$ ( "#menu-close").click();>Your Business Dashboard</a>
+                <a href="../login/login.html" onclick=$ ( "#menu-close").click();>Business Login</a>
             </li>
             <li>
                 <a href="../appointments/appointments.html" onclick=$ ( "#menu-close").click();>Appointments</a>
@@ -68,12 +68,12 @@
                 <a href="../services/services.html" onclick=$ ( "#menu-close").click();>Services</a>
             </li>
             <li>
-                <a href="../exclusive/exclusive.html" onclick=$ ( "#menu-close").click();>Offers/Promos</a>
+                <a href="#" onclick=$ ( "#menu-close").click();>Exclusive Offers</a>
             </li>
             <li>
-                <a href="../contact/contact.html" onclick=$ ( "#menu-close").click();>Contact</a>
+                <a href="../contact/contact.html" onclick=$ ( "#menu-close").click();>Contact Us</a>
             </li>
-            <img src="img/logo.jpg" style="height:200px">
+            <img src="img/logo.jpg" style="width:250px">
         </ul>
     </nav>
 
@@ -98,8 +98,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Optical Store Visit<br>What To Expect</h2>
-                    <p class="lead">Store specific information to maximize your visit <br> FAQs and a guide on eyeglasses/contact lenses <br></p>
+                    <h2 class="section-heading">Optical.ly Services</h2>
+                    <p class="lead">Maximize your visit <br> Schedule an appointment <br> FAQs (Frequently Asked Questions) <br>Eyeglasses and Contact lenses Guide <br><br>Optical.ly provides location specific:</p>
                         <ul>
                             <li>Service and product options</li>
                             <li>Items to bring for patient history and to ease product selection</li>
@@ -107,11 +107,12 @@
                             <li>Patient history or forms to expedite check-in</li>
                             <li>Store policies and procedures</li>
                         </ul>
-                    <p class="lead">Make your next stop at the optical simple and fast <br> No confusions, no hassles.</p>
+                        <br>
+                    <p class="lead">Make your next stop at the optical simple and fast. <br> No confusions, no hassles.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/optical1.jpeg" alt="">
-                </div>
+                    <img class="img-responsive" src="img/optical1.jpeg" alt=""><br><br><br><br><center><a href="../appointments/appointments.html" class="button">Schedule An Eye Exam</a>
+                </div>          
             </div>
 
         </div>
@@ -184,7 +185,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Subscribe Here</h2>
+                    <h2>Monthly Newsletter</h2>
                 </div>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Your email" aria-describedby="basic-addon2">
@@ -294,26 +295,6 @@
             }
         }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
     </script>
 
 </body>

@@ -1,17 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 /*NAVIGATION BAR*/
 
 .schedule {
     position: fixed;
     top: 0;
-    right: 325px;
+    left: 40%;
 }
 
 .logo {
     position: fixed;
     top: 3px;
-    left: 3px;
+    right: 3px;
 }
 
 /* Side Menu */
@@ -50,12 +50,14 @@
     display: block;
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 14px;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #FFFFFF;
     background: rgba(255,255,255,0.2);
+    font-size: 22px;
 }
 
 .sidebar-nav li a:active,
@@ -101,6 +103,8 @@
 .toggle {
     margin: 5px 5px 0 0;
 }
+
+
 
 .login-page {
   width: 360px;

@@ -11,9 +11,12 @@
 
   <body>
 
-  <!-- Navigation -->
+ <!-- Navigation -->
 
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+        <div class="logo">
+            <img src="img/logo.jpg" style="height:50px">
+        </div>
         <div class="schedule">
             <img src="img/schedule.jpg">
         </div>
@@ -31,7 +34,7 @@
                 <a href="../login/login.html" onclick=$ ( "#menu-close").click();>Login/Signup</a>
             </li>
             <li>
-                <a href="../dashboard/index.html" onclick=$ ( "#menu-close").click();>Your Business Dashboard</a>
+                <a href="../login/login.html" onclick=$ ( "#menu-close").click();>Business Login</a>
             </li>
             <li>
                 <a href="../appointments/appointments.html" onclick=$ ( "#menu-close").click();>Appointments</a>
@@ -40,12 +43,12 @@
                 <a href="../services/services.html" onclick=$ ( "#menu-close").click();>Services</a>
             </li>
             <li>
-                <a href="../exclusive/exclusive.html" onclick=$ ( "#menu-close").click();>Offers/Promos</a>
+                <a href="#" onclick=$ ( "#menu-close").click();>Exclusive Offers</a>
             </li>
             <li>
-                <a href="../contact/contact.html" onclick=$ ( "#menu-close").click();>Contact</a>
+                <a href="../contact/contact.html" onclick=$ ( "#menu-close").click();>Contact Us</a>
             </li>
-            <img src="img/logo.jpg" style="height:200px">
+            <img src="img/logo.jpg" style="width:250px">
         </ul>
     </nav>
 
@@ -62,8 +65,8 @@
     <form class="login-form">
       <input type="email" placeholder="email"/>
       <input type="password" placeholder="password"/>
-      <button>Sign-Up</button>
-      <p class="message">Business/store owner? <a href="#">Click here</a></p>
+      <button><a href="../services/services.html">Sign-Up</a></button>
+      <p class="message"><b>Business/store owner? <a href="#">Click here</b></a></p>
     </form>
   </div>
 </div>
@@ -71,7 +74,7 @@
 
         <script src="js/index.js"></script>
 
-        <!-- jQuery -->
+<!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -83,6 +86,8 @@
     <script src="js/jquery.fittext.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -136,30 +141,7 @@
             }
         }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
     </script>
 
-    
-    
-    
   </body>
 </html>

@@ -3,7 +3,7 @@ body,html {
     height: 100%;
 }
 
-body,h1,h2,h3,h4,h5,h6 {
+body,h1,h2,h3,h4,h5,h6, {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -13,7 +13,7 @@ body,h1,h2,h3,h4,h5,h6 {
 .schedule {
     position: fixed;
     top: 0;
-    left: 25%;
+    left: 40%;
 }
 
 .logo {
@@ -58,12 +58,14 @@ body,h1,h2,h3,h4,h5,h6 {
     display: block;
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 14px;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #FFFFFF;
     background: rgba(255,255,255,0.2);
+    font-size: 22px;
 }
 
 .sidebar-nav li a:active,
@@ -148,6 +150,31 @@ body,h1,h2,h3,h4,h5,h6 {
     color: #FFFFFF;
 }
 
+.button {
+    background-color: #07A96D;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: green;
+}
+
+.links a{
+    color: #07A96D;
+    font-size: 16px;
+}
+
+.links a:hover{
+    color: #000000;
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 50%;
@@ -192,6 +219,7 @@ body,h1,h2,h3,h4,h5,h6 {
 
 .section-heading {
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .section-heading-spacer {
