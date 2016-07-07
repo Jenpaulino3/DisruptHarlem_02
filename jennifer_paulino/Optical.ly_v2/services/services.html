@@ -38,35 +38,43 @@
 
 <!-- Navigation -->
 
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="../index/index.html">Optical.ly</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="../index/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../appointments/appointments.html">Appointments</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+        <div class="logo">
+            <img src="img/logo.jpg" style="height:50px">
         </div>
-        <!-- /.container -->
+        <div class="schedule">
+            <img src="img/schedule.jpg">
+        </div>
+    <i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times" style="color:#FFFFFF"></i></a>
+            <li class="sidebar-brand">
+                <a href="../index/index.html" onclick=$ ( "#menu-close").click();>Optical.ly</a>
+            </li>
+            <li>
+                <a href="../index/index.html" onclick=$ ( "#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="../login/login.html" onclick=$ ( "#menu-close").click();>Login/Signup</a>
+            </li>
+            <li>
+                <a href="../dashboard/index.html" onclick=$ ( "#menu-close").click();>Your Business Dashboard</a>
+            </li>
+            <li>
+                <a href="../appointments/appointments.html" onclick=$ ( "#menu-close").click();>Appointments</a>
+            </li>
+            <li>
+                <a href="../services/services.html" onclick=$ ( "#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="../exclusive/exclusive.html" onclick=$ ( "#menu-close").click();>Offers/Promos</a>
+            </li>
+            <li>
+                <a href="../contact/contact.html" onclick=$ ( "#menu-close").click();>Contact</a>
+            </li>
+            <img src="img/logo.jpg" style="height:200px">
+        </ul>
     </nav>
 
 
@@ -75,20 +83,8 @@
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Services</h1>
-                        <h3>What We Provide To Customers</h3>
-                        <hr class="intro-divider">
-                    </div>
-                </div>
-            </div>
-
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
 
@@ -208,20 +204,22 @@
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
-                        </li>
+                            <a href="../index/index.html">Home</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
-                        </li>
+                            <a href="../index/index.html">About</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
-                        </li>
+                            <a href="../index/index.html">Opportunities</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                            <a href="../index/index.html">Terms</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="../index/index.html">Privacy Policy</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="../index/index.html">Contact</a></li>                 
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Optical.ly 2016. All Rights Reserved</p>
                 </div>
@@ -234,6 +232,89 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
 
 </body>
 
